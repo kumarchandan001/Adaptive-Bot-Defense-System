@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bot Detection Framework Design System */
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Security Theme Colors */
+    --primary: 258 89% 66%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 258 20% 96%;
+    --secondary-foreground: 258 89% 30%;
+
+    --muted: 258 10% 96%;
+    --muted-foreground: 258 20% 50%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Threat Level Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --warning: 43 96% 56%;
+    --warning-foreground: 0 0% 0%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Security Gradients */
+    --gradient-security: linear-gradient(135deg, hsl(258 89% 66%), hsl(142 76% 36%));
+    --gradient-threat: linear-gradient(135deg, hsl(0 84% 60%), hsl(43 96% 56%));
+    --gradient-safe: linear-gradient(135deg, hsl(142 76% 36%), hsl(258 89% 66%));
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Security Theme */
+    --background: 258 50% 8%;
+    --foreground: 258 20% 95%;
+
+    --card: 258 50% 10%;
+    --card-foreground: 258 20% 95%;
+
+    --popover: 258 50% 10%;
+    --popover-foreground: 258 20% 95%;
+
+    --primary: 258 89% 76%;
+    --primary-foreground: 258 50% 8%;
+
+    --secondary: 258 30% 15%;
+    --secondary-foreground: 258 20% 90%;
+
+    --muted: 258 30% 15%;
+    --muted-foreground: 258 20% 65%;
+
+    --accent: 142 76% 46%;
+    --accent-foreground: 258 50% 8%;
+
+    /* Dark Threat Colors */
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 258 50% 8%;
+    
+    --warning: 43 96% 66%;
+    --warning-foreground: 258 50% 8%;
+    
+    --success: 142 76% 46%;
+    --success-foreground: 258 50% 8%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
